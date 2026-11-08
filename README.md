@@ -1,158 +1,61 @@
-# Healthcare Big Data Analytics Using PySpark
+# Contributing Guidelines
 
-## Project Overview
+Thank you for your interest in contributing to Healthcare Big Data Analytics Using PySpark!
 
-Healthcare organizations generate large amounts of data related to patients, hospital admissions, diagnoses, treatments, and billing. Analyzing this data can help identify healthcare trends, understand patient admission patterns, and gain insights into hospital operations.
+This project welcomes contributions from students, developers, data analysts, and researchers.
 
-This project uses **Apache PySpark** to process and analyze healthcare datasets. It focuses on data cleaning, distributed data processing, healthcare analytics, and hospital readmission analysis.
+## Ways to Contribute
 
-The project is implemented using Python and PySpark in a Jupyter Notebook environment.
+You can contribute by:
 
-## Objectives
+- Adding new healthcare analytics features.
+- Developing machine learning models.
+- Improving existing PySpark operations.
+- Creating interactive dashboards.
+- Optimizing data processing workflows.
+- Fixing bugs and improving code quality.
+- Improving documentation and setup instructions.
+- Suggesting new project ideas.
 
-- Understand and process large healthcare datasets using PySpark.
-- Perform data cleaning and preprocessing.
-- Analyze disease and diagnosis patterns.
-- Calculate patient age statistics and hospital length of stay.
-- Analyze hospital admissions by ward, hospital, and admission type.
-- Identify 7-day and 30-day readmission patterns.
-- Examine healthcare billing and government subsidy distribution.
-- Use PySpark DataFrame operations and Spark SQL for analysis.
+## Getting Started
 
-## Technologies Used
+1. Fork the repository.
+2. Clone your fork.
+3. Create a new branch for your contribution.
+4. Make your changes.
+5. Test your implementation.
+6. Commit your changes with a meaningful message.
+7. Submit a pull request.
 
-- **Programming Language:** Python
-- **Big Data Processing:** Apache PySpark 3.5.6
-- **Notebook Environment:** Jupyter Notebook
-- **Data Processing:** PySpark DataFrames and Spark SQL
-- **Development Environment:** Anaconda
-- **Java:** JDK 17
+## Contribution Guidelines
 
-## Dataset
+- Keep code readable and properly organized.
+- Explain new analytical methods and their purpose.
+- Include relevant comments where necessary.
+- Test changes before submitting pull requests.
+- Do not upload confidential or personally identifiable patient information.
+- Do not include datasets unless their licensing permits redistribution.
+- Update documentation when introducing new features.
 
-The project uses the **India Hospital Readmission Dataset (2015–2024)**.
+## Suggesting New Ideas
 
-Source: [Kaggle – India Hospital Readmission Dataset](https://www.kaggle.com/datasets/digutlaranjithkumar/india-hospital-readmission-dataset-20152024)
+If you have an idea but haven't implemented it yet, open a GitHub Issue describing:
 
-The dataset contains five CSV files:
+- The proposed feature.
+- Why it would be useful.
+- How it could improve the existing project.
 
-| Dataset | Description |
-|---|---|
-| patients.csv | Patient demographic and medical information |
-| admissions.csv | Hospital admission and discharge details |
-| diagnoses.csv | Patient diagnosis information |
-| hospitals.csv | Hospital details and classifications |
-| billing.csv | Hospital billing and cost information |
+You can also use GitHub Discussions for general questions and brainstorming.
 
-### Dataset Size
+## Pull Requests
 
-| Dataset | Number of Records |
-|---|---:|
-| Patients | 86,400 |
-| Admissions | 120,000 |
-| Diagnoses | 271,341 |
-| Hospitals | 33 |
-| Billing | 120,000 |
+When submitting a pull request, explain:
 
-**Note:** The dataset is synthetic and is used for academic and analytical purposes.
+- What you changed.
+- Why you made the changes.
+- How you tested them.
+- Any additional dependencies or setup requirements.
 
-## Project Workflow
+All contributions are subject to review before being merged.
 
-1. **Spark Initialization:** Create a SparkSession to perform distributed data processing.
-2. **Data Loading:** Load the five healthcare CSV datasets into PySpark DataFrames.
-3. **Data Cleaning:** Check for missing values, duplicate records, and inconsistent categorical values.
-4. **Data Preprocessing:** Prepare the datasets for analysis.
-5. **Data Analysis:** Perform aggregations, grouping, filtering, and calculations using PySpark DataFrame operations.
-6. **Spark SQL:** Execute SQL queries to analyze healthcare information.
-7. **Result Interpretation:** Examine the results to identify healthcare trends and readmission patterns.
-
-## Key Analysis Performed
-
-- Disease category distribution.
-- Patient age statistics.
-- Average hospital length of stay.
-- Hospital admissions by ward and admission type.
-- Hospital-wise admission analysis.
-- 7-day and 30-day readmission analysis.
-- Readmission rates by ward, admission type, diagnosis category, age group, and previous admissions.
-- Healthcare billing analysis, including government subsidies and out-of-pocket expenses.
-
-## Key Findings
-
-Some important observations from the analysis include:
-
-- Cardiovascular diseases had the highest number of diagnosis records.
-- The average patient age was approximately **48 years**.
-- The average hospital stay was approximately **6.85 days**.
-- The overall 30-day readmission rate was approximately **11.84%**.
-- ICU admissions showed a higher 30-day readmission rate (approximately **23.76%**) compared with general ward admissions (approximately **7.90%**).
-- Patients aged 60 and above showed a higher 30-day readmission rate than younger age groups.
-- Patients with a greater number of previous admissions generally showed higher readmission rates.
-- Government subsidies covered approximately **49.7%** of the average hospital billing cost.
-
-These findings are based on the supplied synthetic dataset and should not be interpreted as conclusions about actual hospital populations.
-
-## How to Run the Project
-
-### Prerequisites
-
-- Python
-- Java JDK 17
-- Apache PySpark 3.5.6
-- Anaconda or Jupyter Notebook
-
-### Installation
-
-Install PySpark:
-
-```bash
-pip install pyspark==3.5.6
-```
-
-### Run the Notebook
-
-1. Clone this repository:
-
-```bash
-git clone https://github.com/at-vaishnavi/Healthcare-Big-Data-Analytics.git
-```
-
-2. Navigate to the project directory:
-
-```bash
-cd Healthcare-Big-Data-Analytics
-```
-
-3. Download the dataset from the Kaggle source provided above.
-
-4. Place the five CSV files inside a folder named `dataset` in the project directory.
-
-5. Open Jupyter Notebook:
-
-```bash
-jupyter notebook
-```
-
-6. Open `Healthcare_Big_Data_Analytics.ipynb` and execute the cells in order.
-
-**Note:** Update the dataset file paths in the notebook according to your local folder location before execution.
-
-## Future Enhancements
-
-The project can be extended with additional big data analytics and machine learning capabilities to provide deeper insights into healthcare operations.
-
-- **Interactive Healthcare Dashboard:** Develop an interactive dashboard using Streamlit or Power BI to visualize patient admissions, disease distribution, readmission rates, hospital performance, and billing trends.
-- **Readmission Prediction:** Implement machine learning models using Apache Spark MLlib to predict the likelihood of patient readmission within 30 days.
-- **Patient Risk Segmentation:** Group patients into different risk categories based on their historical admission patterns and medical information.
-- **Hospital Performance Analysis:** Compare hospitals based on admission volumes, average length of stay, readmission rates, and billing patterns.
-- **Disease Trend Analysis:** Analyze changes in disease distribution and admission patterns across different years and patient demographics.
-- **Hospital Stay Prediction:** Explore machine learning techniques to estimate patient length of stay using historical admission data.
-- **Advanced Big Data Processing:** Implement Spark optimization techniques, window functions, data partitioning, and Parquet storage to improve processing efficiency.
-- **Automated ETL Pipeline:** Develop a reusable pipeline for data ingestion, cleaning, transformation, and analysis.
-
-
-
-
----
-
-*Academic project developed to explore big data processing and healthcare analytics using Apache PySpark.*
+Thank you for helping improve this project!
