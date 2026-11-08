@@ -139,9 +139,18 @@ jupyter notebook
 
 ## Future Enhancements
 
-- Develop interactive healthcare analytics dashboards.
-- Explore machine learning techniques for readmission prediction using Spark MLlib.
-- Extend the analysis with additional healthcare performance indicators.
+The project can be extended with additional big data analytics and machine learning capabilities to provide deeper insights into healthcare operations.
+
+- **Interactive Healthcare Dashboard:** Develop an interactive dashboard using Streamlit or Power BI to visualize patient admissions, disease distribution, readmission rates, hospital performance, and billing trends.
+- **Readmission Prediction:** Implement machine learning models using Apache Spark MLlib to predict the likelihood of patient readmission within 30 days.
+- **Patient Risk Segmentation:** Group patients into different risk categories based on their historical admission patterns and medical information.
+- **Hospital Performance Analysis:** Compare hospitals based on admission volumes, average length of stay, readmission rates, and billing patterns.
+- **Disease Trend Analysis:** Analyze changes in disease distribution and admission patterns across different years and patient demographics.
+- **Hospital Stay Prediction:** Explore machine learning techniques to estimate patient length of stay using historical admission data.
+- **Advanced Big Data Processing:** Implement Spark optimization techniques, window functions, data partitioning, and Parquet storage to improve processing efficiency.
+- **Automated ETL Pipeline:** Develop a reusable pipeline for data ingestion, cleaning, transformation, and analysis.
+
+
 
 
 ---
